@@ -14,11 +14,6 @@ web3
 
 
 
-
-
-
-
-
 [web_CentOS8]
 web11
 web12
@@ -32,3 +27,8 @@ web12
 
 [web_13]
 web13
+
+
+[load]
+lb1
+lb11
