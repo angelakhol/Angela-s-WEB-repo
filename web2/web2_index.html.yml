@@ -14,9 +14,9 @@
     - name: Put content to /var/www/html/
       copy:
         content: |
-          <h1>Hello from Disney!</h1>
+          <h1>Hello from Disney! ❤️</h1>
           <h3>Web server 102 / CentOS 7</h3>
-          <img src="https://d23.com/app/uploads/2013/04/1180w-600h_minnie-mouse_1.jpg">
+          <img src="https://wallscloud.net/img/resize/1600/1200/MM/2016-09-25-disney-bambi-movie-kJJ.jpg">
         dest: /var/www/html/index.html
 
 

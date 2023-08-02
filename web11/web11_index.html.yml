@@ -14,9 +14,9 @@
     - name: Put content to /var/www/html/
       copy:
         content: |
-          <h1 style="background-color:DodgerBlue;">Finding Nemo</h1>
+          <h1>Hello from Disney! 🎊</h1>
           <h3>Web server 111 / CentOS 8</h3>
-          <img src="https://facts.net/wp-content/uploads/2023/06/41-facts-about-the-movie-finding-nemo-1687347016.jpeg">
+          <img src="https://wallscloud.net/img/resize/1600/1200/MM/2016-09-25-disney-bambi-movie-kJJ.jpg">
         dest: /var/www/html/index.html
 
 

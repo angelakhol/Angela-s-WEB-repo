@@ -14,9 +14,9 @@
     - name: Put content to /var/www/html/
       copy:
         content: |
-          <h1>Hello from Disney!</h1>
+          <h1>Hello from Disney! 🌸</h1>
           <h3>Web server 112 / CentOS 8</h3>
-          <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/06/The-Lion-King-Simba.jpg">
+          <img src="https://wallscloud.net/img/resize/1600/1200/MM/2016-09-25-disney-bambi-movie-kJJ.jpg">
         dest: /var/www/html/index.html
 
 
