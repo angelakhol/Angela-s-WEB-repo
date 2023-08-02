@@ -107,8 +107,8 @@
           #---------------------------------------------------------------------
           # static backend for serving up images, stylesheets and such
           #---------------------------------------------------------------------
-          #backend static
-          #balance     roundrobin
+          backend static
+          balance     roundrobin
           #server      static 127.0.0.1:4331 check
 
           #---------------------------------------------------------------------
