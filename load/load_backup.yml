@@ -84,7 +84,7 @@
               option httpclose
               stats enable
               stats show-legends
-              stats refresh 10s
+              stats refresh 5s
               stats uri /stats
               stats realm Haproxy\ Statistics
               stats auth student:password
@@ -107,8 +107,8 @@
           #---------------------------------------------------------------------
           # static backend for serving up images, stylesheets and such
           #---------------------------------------------------------------------
-          # backend static
-          # balance     roundrobin
+          backend static
+          balance     roundrobin
           # server      static 127.0.0.1:4331 check
 
           #---------------------------------------------------------------------
@@ -130,12 +130,6 @@
               #server  web3  192.168.110.23:80   check
               #server  web13  192.168.110.24:80  check
         dest: /etc/haproxy/haproxy.cfg
-
-    - name: Restart HAProxy
-      service:
-        name: haproxy
-        state: restarted      
-    
 
 
     - name: update httpd.conf
@@ -228,4 +222,4 @@
       service:
         name: httpd
         state: started
-        #enabled: yes        
+        enabled: yes        
